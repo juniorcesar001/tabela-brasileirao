@@ -1,0 +1,39 @@
+@import 'reset';
+
+$green: #00DF5E;
+
+.table {
+    &_head {
+        background-color: $green;
+        th {
+            font-weight: bold;
+        }
+    }
+    &_content {
+        &_recent {
+            display: block;
+            ul {
+                display: block;
+                li {
+                    display: inline-block;
+                    i {
+                        display: block;
+                        width: 10px;
+                        height: 10px;
+                        border-radius: 50%;
+                        
+                        &.icon-win {    
+                            background-color: #14A050;
+                        }
+                        &.icon-lose {
+                            background-color: #EA463B;
+                        }
+                        &.icon-tie {
+                            background-color: #E9E9E9;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
